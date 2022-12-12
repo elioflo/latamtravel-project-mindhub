@@ -1,0 +1,232 @@
+
+/*====================GENERAL================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #B9D0E9;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.nav, .service, .about, .contact {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.header {
+    padding: 3rem 0 2.5rem 0;
+    background-color: #0E2239;
+    min-width: 15vh;
+}
+
+.nav {
+    position: relative;
+    text-align: left;
+}
+
+.link {
+    margin: 0 10px 0 0;
+    background-color: #FAFAFA;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.25);
+}
+
+.logo {
+    position: absolute;
+    max-height: 80px;
+    right: 0;
+    top: -40px;
+}
+
+.service, .about, .contact {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    color: #0E2239;
+    min-height: 70vh;
+}
+
+.service__subtitle, .about__subtitle, .contact__subtitle {
+    text-align: center;
+}
+
+
+.footer {
+    background-color: #0E2239;
+    text-align: center;
+    padding: 1.5rem 0;
+    min-height: 15vh;
+}
+
+.footer__link {
+    display: inline-block;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    padding: .5rem;
+    margin: 0 .5rem;
+}
+
+.footer__text {
+    margin-top: 1.5rem;
+}
+
+.footer__name {
+    color: #FFF;
+    text-decoration: none;
+}
+
+/*============================SERVICE=============================*/
+
+.service__header {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.service__main-img {
+    max-width: 100%;
+    border-radius: 15px;
+}
+
+.service__header-content {
+    color: #0E2239;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+             1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+}
+
+.service__link {
+    background-color: #FAFAFA;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 3px 15px;
+    display: inline-block;
+    margin-top: 8px;
+    border-radius: 5px;
+}
+
+.service__content {
+    width: 100%;
+    max-width: 600px;
+    margin: 3rem auto;
+    position: relative;
+    text-align: center;   
+}
+
+.service__text-img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.service__text {
+    padding: 1rem;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: bold;
+    color: whitesmoke;
+    text-shadow: 0 0 10px black;
+    text-align: justify;
+}
+
+/*=====================ABOUT==============================*/
+
+.about__content {
+    width: 100%;
+}
+
+.about__section {
+    display: inline-block;
+    width: max(31%,330px);
+    vertical-align: top;
+    margin-right: 2%;
+}
+
+.about__section:last-child {
+    margin-right: 0;
+}
+
+.about__img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.about__text {
+    margin-top: 2rem;
+    line-height: 1.5rem;
+}
+
+.about__title, .about__subtitle {
+    text-align: center;
+    margin: 2.5rem 0;
+}
+
+
+/*=====================CONTACT=======================*/
+
+.contact__header {
+    width: 100%;
+    position: relative;
+}
+
+.contact__main-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.contact__header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-shadow: 1px 1px 2px black;
+}
+
+.contact__content {
+    width: 100%;
+    margin: 3rem auto;
+}
+
+.contact__text {
+    display: inline-block;
+    width: max(45%,330px);
+    margin-right: 4%;
+    line-height: 2rem;
+    text-align: justify;
+}
+
+.contact__data {
+    display: inline-block;
+    width: max(45%,330px);
+    text-align: center;
+}
+
+.contact__email, .contact__phone {
+    display: inline-block;
+    background-color: #FAFAFA;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+.contact__email {
+    margin-right: 4%;
+}
