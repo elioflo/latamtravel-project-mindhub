@@ -148,6 +148,7 @@ body {
 
 .about__content {
     width: 100%;
+    text-align: center;
 }
 
 .about__section {
@@ -155,6 +156,7 @@ body {
     width: max(31%,330px);
     vertical-align: top;
     margin-right: 2%;
+    margin-top: 1rem;
 }
 
 .about__section:last-child {
@@ -200,6 +202,7 @@ body {
 .contact__content {
     width: 100%;
     margin: 3rem auto;
+    text-align: center;
 }
 
 .contact__text {
