@@ -20,18 +20,19 @@ body {
 }
 
 .header {
-    padding: 3rem 0 2.5rem 0;
+    padding: 1rem 0;
     background-color: #0E2239;
-    min-width: 15vh;
+    min-height: 10vh;
 }
 
 .nav {
-    position: relative;
-    text-align: left;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
 }
 
 .link {
-    margin: 0 10px 0 0;
     background-color: #FAFAFA;
     color: black;
     text-decoration: none;
@@ -42,10 +43,8 @@ body {
 }
 
 .logo {
-    position: absolute;
     max-height: 80px;
-    right: 0;
-    top: -40px;
+    margin-left: auto;
 }
 
 .service, .about, .contact {
@@ -94,7 +93,7 @@ body {
 
 .service__main-img {
     max-width: 100%;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 .service__header-content {
@@ -116,14 +115,14 @@ body {
     display: inline-block;
     margin-top: 8px;
     border-radius: 5px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.25);
 }
 
 .service__content {
     width: 100%;
     max-width: 600px;
-    margin: 3rem auto;
-    position: relative;
-    text-align: center;   
+    margin: 1rem auto;
+    position: relative;   
 }
 
 .service__text-img {
@@ -148,19 +147,15 @@ body {
 
 .about__content {
     width: 100%;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .about__section {
-    display: inline-block;
-    width: max(31%,330px);
-    vertical-align: top;
-    margin-right: 2%;
+    width: max(100% / 3,330px);
     margin-top: 1rem;
-}
-
-.about__section:last-child {
-    margin-right: 0;
+    padding: 1rem;
 }
 
 .about__img {
@@ -169,17 +164,24 @@ body {
 }
 
 .about__text {
-    margin-top: 2rem;
+    margin-top: 1rem;
     line-height: 1.5rem;
+    text-align: justify;
 }
 
 .about__title, .about__subtitle {
     text-align: center;
-    margin: 2.5rem 0;
+    margin: 1rem 0;
 }
 
 
 /*=====================CONTACT=======================*/
+
+.contact {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 
 .contact__header {
     width: 100%;
@@ -188,7 +190,7 @@ body {
 
 .contact__main-img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .contact__header-content {
@@ -199,28 +201,20 @@ body {
     text-shadow: 1px 1px 2px black;
 }
 
-.contact__content {
-    width: 100%;
-    margin: 3rem auto;
-    text-align: center;
-}
-
 .contact__text {
-    display: inline-block;
-    width: max(45%,330px);
-    margin-right: 4%;
-    line-height: 2rem;
+    width: max(50%,330px);
+    line-height: 1.5rem;
     text-align: justify;
 }
 
 .contact__data {
-    display: inline-block;
-    width: max(45%,330px);
-    text-align: center;
+    width: max(50%,330px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact__email, .contact__phone {
-    display: inline-block;
     background-color: #FAFAFA;
     color: black;
     text-decoration: none;
@@ -228,8 +222,4 @@ body {
     padding: 5px 10px;
     border-radius: 10px;
     margin-top: 1rem;
-}
-
-.contact__email {
-    margin-right: 4%;
 }
