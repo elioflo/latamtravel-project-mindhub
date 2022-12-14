@@ -1,181 +1,260 @@
 /*====================GENERAL================*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #B9D0E9;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
+  background-color: #b9d0e9;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
 }
 
-.nav, .service, .about, .contact {
-    max-width: 1100px;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0 1rem;
+.nav,
+.service,
+.about,
+.contact,
+.services,
+.special {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .header {
-    padding: 1rem 0;
-    background-color: #0E2239;
+  padding: 1rem 0;
+  background-color: #0e2239;
+  min-height: 15vh;
 }
 
 .nav {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 0.2rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.2rem;
 }
 
 .link {
-    background-color: #FAFAFA;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 5px;
-    box-shadow: 0 4px 5px rgba(0,0,0,0.25);
+  background-color: #fafafa;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25);
 }
 
 .logo {
-    max-height: 80px;
-    margin-left: auto;
+  max-height: 80px;
+  margin-left: auto;
 }
 
 .title {
-    margin-top: 2.5rem;
-    text-align: center;
+  margin-top: 1rem;
+  text-align: center;
 }
 
-.service, .about, .contact {
-    margin-top: 2rem;
-    margin-bottom: 3rem;
-    color: #0E2239;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.service,
+.about,
+.contact,
+.special {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  color: #0e2239;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  min-height: 70vh;
 }
 
-.service__subtitle, .about__subtitle, .contact__subtitle {
-    width: 100%;
-    text-align: center;
+.service__subtitle,
+.about__subtitle,
+.contact__subtitle,
+.services__subtitle,
+.special__subtitle {
+  width: 100%;
+  text-align: center;
 }
-
 
 .footer {
-    background-color: #0E2239;
-    text-align: center;
-    padding: 1.5rem 0;
+  background-color: #0e2239;
+  text-align: center;
+  padding: 1.5rem 0;
+  min-height: 15vh;
 }
 
 .footer__link {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid #fff;
-    border-radius: 100%;
-    width: 2.5rem;
-    height: 2.5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 .footer__text {
-    margin-top: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .footer__name {
-    color: #FFF;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
 
 /*=========================SERVICE==============================*/
 
 .service {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .service__main-img {
-    display: block;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    width: 100%;
-    border-radius: 10px;
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  border-radius: 10px;
 }
 
 .service__text {
-    max-width: max(50%,330px);
-    line-height: 2rem;
-    padding: 0 1rem;
-    text-align: justify;
+  max-width: max(50%, 330px);
+  line-height: 2rem;
+  padding: 0 1rem;
+  text-align: justify;
 }
 
 .service__text-img {
-    max-width: max(50%,330px);
-    border-radius: 5px;
+  max-width: max(50%, 330px);
+  border-radius: 5px;
 }
-
 
 /*=========ABOUT=============*/
 
 .about__section {
-    width: 100%;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .about__img {
-    width: max(45%,330px);
-    border-radius: 5px;
+  width: max(45%, 330px);
+  border-radius: 5px;
 }
 
 .about__text {
-    width: max(55%,330px);
-    max-width: 100%;
-    line-height: 1.5rem;
-    text-align: justify;
-    padding: 1rem;
+  width: max(55%, 330px);
+  max-width: 100%;
+  line-height: 1.5rem;
+  text-align: justify;
+  padding: 1rem;
 }
-
 
 /*========contact==============*/
 
-
 .contact__img {
-    width: 100%;
-    margin: 1rem auto;
-    border-radius: 5px;
+  width: 100%;
+  margin: 1rem auto;
+  border-radius: 5px;
 }
 
 .contact__text {
-    width: 100%;
-    margin: 1rem auto;
-    line-height: 1.5rem;
-    text-align: justify;
+  width: 100%;
+  margin: 1rem auto;
+  line-height: 1.5rem;
+  text-align: justify;
 }
 
-.contact__email, .contact__phone {
-    background-color: #FAFAFA;
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 10px;
-    margin-top: 1rem;
+.contact__email,
+.contact__phone {
+  background-color: #fafafa;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 10px;
+  margin-top: 1rem;
 }
 
 .contact__email {
-    margin-right: auto;
+  margin-right: auto;
 }
 
 .contact__phone {
-    margin-left: auto;
+  margin-left: auto;
 }
 
+/*======================SERVICES=================*/
 
+.services {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: #0e2239;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  background-color: white;
+  width: 100%;
+  border: 1px solid #ddd;
+  min-height: 300px;
+  margin: auto 0;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 1rem;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+thead tr {
+  background-color: #0e2239;
+  color: #fafafa;
+}
+
+table tr td:first-child {
+  text-align: left;
+}
+
+/*================SPECIAL=====================*/
+
+.special__section {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.special__img {
+  width: max(45%, 330px);
+  border-radius: 5px;
+}
+
+.special__text {
+  width: max(55%, 330px);
+  line-height: 1.5rem;
+  text-align: justify;
+  padding: 2rem;
+  font-size: clamp(1rem, 2vh, 2rem);
+}
+
+.special__text ul, .special__text ol {
+    padding: 3rem;
+}
